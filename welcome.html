@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Famrmo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'green-dark': '#1e4a3a',
+                        'green-light': '#5dd5b8',
+                        'green-medium': '#3d8b7d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Mobile Container -->
+    <div class="max-w-sm mx-auto bg-white min-h-screen relative">
+        <!-- Status Bar -->
+        <div class="flex justify-between items-center px-4 py-2 text-sm text-gray-700">
+            <span>1:06</span>
+            <div class="flex items-center space-x-1">
+                <!-- Signal, WiFi, Battery icons -->
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z"/>
+                </svg>
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M17.778 8.222c-4.296-4.296-11.26-4.296-15.556 0A1 1 0 01.808 6.808c5.076-5.077 13.308-5.077 18.384 0a1 1 0 01-1.414 1.414zM14.95 11.05a7 7 0 00-9.9 0 1 1 0 01-1.414-1.414 9 9 0 0112.728 0 1 1 0 01-1.414 1.414zM12.12 13.88a3 3 0 00-4.242 0 1 1 0 01-1.415-1.415 5 5 0 017.072 0 1 1 0 01-1.415 1.415zM9 16a1 1 0 112 0 1 1 0 01-2 0z" clip-rule="evenodd"/>
+                </svg>
+                <div class="w-6 h-3 border border-gray-400 rounded-sm">
+                    <div class="w-4 h-2 bg-green-500 rounded-sm m-0.5"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <div class="flex items-center justify-between px-4 py-6 bg-white">
+            <!-- User Avatar and Name -->
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                    <span class="text-gray-600 font-medium text-lg">AA</span>
+                </div>
+                <div>
+                    <h1 class="text-xl font-medium text-gray-800">Aaron</h1>
+                </div>
+                <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+            </div>
+            
+            <!-- Right Icons -->
+            <div class="flex items-center space-x-4">
+                <button class="p-2">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                    </svg>
+                </button>
+                <button class="p-2">
+                    <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5v-5zM12 17h-.08a3 3 0 01-2.72-1.72l-1.36-2.72A3 3 0 015.36 11H5a3 3 0 01-3-3V7a3 3 0 013-3h1.5L9 1h6l2.5 3H19a3 3 0 013 3v1a3 3 0 01-3 3h-.36a3 3 0 01-2.48 1.56l-1.36 2.72A3 3 0 0112.08 17H12z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Welcome Content -->
+        <div class="px-6 py-8">
+            <!-- Welcome Hero -->
+            <div class="text-center mb-12">
+                <div class="w-24 h-24 mx-auto mb-6 bg-gradient-to-br from-green-light to-green-medium rounded-2xl flex items-center justify-center shadow-lg">
+                    <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">Welcome to Famrmo</h2>
+                <p class="text-gray-600 leading-relaxed">Start your agricultural investment journey with us. Choose what you'd like to do next.</p>
+            </div>
+
+            <!-- Action Cards -->
+            <div class="space-y-4">
+                <!-- Create a Farm -->
+                <button class="w-full bg-green-dark hover:bg-green-medium text-white rounded-2xl p-6 text-left transition-colors duration-200 shadow-sm hover:shadow-md">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-white bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-white mb-2">Create a Farm</h3>
+                            <p class="text-green-100 text-sm leading-relaxed">Start your own agricultural project and manage your farm from seed to harvest.</p>
+                        </div>
+                        <svg class="w-5 h-5 text-white opacity-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </button>
+
+                <!-- Check Marketplace -->
+                <button class="w-full bg-white border-2 border-gray-100 hover:border-green-light text-gray-800 rounded-2xl p-6 text-left transition-colors duration-200 shadow-sm hover:shadow-md">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-green-light bg-opacity-10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-green-medium" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Invest in Projects</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Browse the marketplace and invest in existing agricultural projects.</p>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </button>
+
+                <!-- Buy Farm Produce -->
+                <button class="w-full bg-white border-2 border-gray-100 hover:border-green-light text-gray-800 rounded-2xl p-6 text-left transition-colors duration-200 shadow-sm hover:shadow-md">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-green-light bg-opacity-10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-green-medium" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17M17 13v4a2 2 0 01-2 2H9a2 2 0 01-2-2v-4m8 0V9a2 2 0 00-2-2H9a2 2 0 00-2 2v4.01"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-2">Buy Farm Produce</h3>
+                            <p class="text-gray-600 text-sm leading-relaxed">Purchase fresh produce directly from farms in our network.</p>
+                        </div>
+                        <svg class="w-5 h-5 text-gray-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Bottom Text -->
+            <div class="text-center mt-12">
+                <p class="text-gray-500 text-sm">
+                    Need help getting started? 
+                    <button class="text-green-medium font-medium hover:underline">Contact Support</button>
+                </p>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <div class="absolute bottom-0 left-0 right-0 bg-white border-t border-gray-200">
+            <div class="flex justify-around py-3">
+                <!-- Home -->
+                <button class="flex flex-col items-center space-y-1 py-2">
+                    <svg class="w-6 h-6 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-9 9a1 1 0 001.414 1.414L2 12.414V17a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1v-4.586l.293.293a1 1 0 001.414-1.414l-9-9z"/>
+                    </svg>
+                    <span class="text-xs text-gray-800 font-medium">Home</span>
+                    <div class="w-full h-0.5 bg-gray-800 rounded-full mt-1"></div>
+                </button>
+
+                <!-- Investments -->
+                <button class="flex flex-col items-center space-y-1 py-2">
+                    <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                    </svg>
+                    <span class="text-xs text-gray-400">Investments</span>
+                </button>
+
+                <!-- Finance -->
+                <button class="flex flex-col items-center space-y-1 py-2">
+                    <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                    </svg>
+                    <span class="text-xs text-gray-400">Finance</span>
+                </button>
+
+                <!-- Market Place -->
+                <button class="flex flex-col items-center space-y-1 py-2">
+                    <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                    </svg>
+                    <span class="text-xs text-gray-400">Market Place</span>
+                </button>
+
+                <!-- Invites -->
+                <button class="flex flex-col items-center space-y-1 py-2">
+                    <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                    </svg>
+                    <span class="text-xs text-gray-400">Invites</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
