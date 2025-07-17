@@ -308,6 +308,359 @@
                         >
                     </div>
                 </div>
+
+                <!-- Dairy Details -->
+                <div id="dairyDetails" class="space-y-6 hidden">
+                    <h3 class="text-lg font-semibold text-gray-900">Dairy details</h3>
+                    
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Dairy animal type</label>
+                        <select class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base appearance-none bg-white">
+                            <option value="">Select dairy animal</option>
+                            <option value="cows">Dairy Cows</option>
+                            <option value="goats">Dairy Goats</option>
+                            <option value="sheep">Dairy Sheep</option>
+                            <option value="buffalo">Water Buffalo</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Number of animals</label>
+                        <input 
+                            type="number" 
+                            placeholder="Enter number of dairy animals" 
+                            class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base"
+                        >
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Milking frequency</label>
+                        <select class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base appearance-none bg-white">
+                            <option value="">Select milking frequency</option>
+                            <option value="twice-daily">Twice daily</option>
+                            <option value="three-times-daily">Three times daily</option>
+                            <option value="once-daily">Once daily</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Expected milk production (liters/day)</label>
+                        <input 
+                            type="number" 
+                            placeholder="Enter expected daily milk production" 
+                            class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base"
+                        >
+                    </div>
+                </div>
+
+                <!-- Beekeeping Details -->
+                <div id="beekeepingDetails" class="space-y-6 hidden">
+                    <h3 class="text-lg font-semibold text-gray-900">Beekeeping details</h3>
+                    
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Number of hives</label>
+                        <input 
+                            type="number" 
+                            placeholder="Enter number of beehives" 
+                            class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base"
+                        >
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Bee species</label>
+                        <select class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base appearance-none bg-white">
+                            <option value="">Select bee species</option>
+                            <option value="european">European Honey Bee</option>
+                            <option value="african">Africanized Honey Bee</option>
+                            <option value="italian">Italian Bee</option>
+                            <option value="carniolan">Carniolan Bee</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Expected honey harvest (kg/hive/year)</label>
+                        <input 
+                            type="number" 
+                            placeholder="Enter expected honey production" 
+                            class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base"
+                        >
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Hive inspection frequency</label>
+                        <select class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base appearance-none bg-white">
+                            <option value="">Select inspection frequency</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="bi-weekly">Bi-weekly</option>
+                            <option value="monthly">Monthly</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Mushroom Details -->
+                <div id="mushroomDetails" class="space-y-6 hidden">
+                    <h3 class="text-lg font-semibold text-gray-900">Mushroom cultivation details</h3>
+                    
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Mushroom variety</label>
+                        <select class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base appearance-none bg-white">
+                            <option value="">Select mushroom variety</option>
+                            <option value="oyster">Oyster Mushrooms</option>
+                            <option value="shiitake">Shiitake Mushrooms</option>
+                            <option value="button">Button Mushrooms</option>
+                            <option value="reishi">Reishi Mushrooms</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Growing medium</label>
+                        <select class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base appearance-none bg-white">
+                            <option value="">Select growing medium</option>
+                            <option value="straw">Straw substrate</option>
+                            <option value="sawdust">Sawdust substrate</option>
+                            <option value="logs">Log cultivation</option>
+                            <option value="compost">Compost substrate</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Cultivation area (square meters)</label>
+                        <input 
+                            type="number" 
+                            placeholder="Enter cultivation area" 
+                            class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base"
+                        >
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Harvest cycle duration</label>
+                        <input 
+                            type="text" 
+                            placeholder="e.g., 2-3 weeks" 
+                            class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base"
+                        >
+                    </div>
+                </div>
+
+                <!-- Agroforestry Details -->
+                <div id="agroforestryDetails" class="space-y-6 hidden">
+                    <h3 class="text-lg font-semibold text-gray-900">Agroforestry details</h3>
+                    
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Tree species</label>
+                        <select class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base appearance-none bg-white">
+                            <option value="">Select primary tree species</option>
+                            <option value="fruit-trees">Fruit Trees</option>
+                            <option value="timber">Timber Trees</option>
+                            <option value="nut-trees">Nut Trees</option>
+                            <option value="bamboo">Bamboo</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Number of trees to plant</label>
+                        <input 
+                            type="number" 
+                            placeholder="Enter number of trees" 
+                            class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base"
+                        >
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Intercrop selection</label>
+                        <select class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base appearance-none bg-white">
+                            <option value="">Select intercrop type</option>
+                            <option value="vegetables">Vegetables</option>
+                            <option value="grains">Grains & Cereals</option>
+                            <option value="legumes">Legumes</option>
+                            <option value="herbs">Medicinal Herbs</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Expected maturity period (trees)</label>
+                        <input 
+                            type="text" 
+                            placeholder="e.g., 3-5 years" 
+                            class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base"
+                        >
+                    </div>
+                </div>
+
+                <!-- Dairy Details -->
+                <div id="dairyDetails" class="space-y-6 hidden">
+                    <h3 class="text-lg font-semibold text-gray-900">Dairy details</h3>
+                    
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Dairy animal type</label>
+                        <select class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base appearance-none bg-white">
+                            <option value="">Select dairy animal</option>
+                            <option value="dairy-cows">Dairy Cows</option>
+                            <option value="goats">Dairy Goats</option>
+                            <option value="sheep">Dairy Sheep</option>
+                            <option value="buffalo">Water Buffalo</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Number of animals</label>
+                        <input 
+                            type="number" 
+                            placeholder="Enter number of dairy animals" 
+                            class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base"
+                        >
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Milking schedule</label>
+                        <select class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base appearance-none bg-white">
+                            <option value="">Select milking schedule</option>
+                            <option value="twice-daily">Twice daily</option>
+                            <option value="three-times-daily">Three times daily</option>
+                            <option value="once-daily">Once daily</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Expected milk production (liters/day)</label>
+                        <input 
+                            type="number" 
+                            placeholder="e.g., 20 liters per day" 
+                            class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base"
+                        >
+                    </div>
+                </div>
+
+                <!-- Beekeeping Details -->
+                <div id="beekeepingDetails" class="space-y-6 hidden">
+                    <h3 class="text-lg font-semibold text-gray-900">Beekeeping details</h3>
+                    
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Bee species</label>
+                        <select class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base appearance-none bg-white">
+                            <option value="">Select bee species</option>
+                            <option value="apis-mellifera">European Honey Bee</option>
+                            <option value="apis-cerana">Asian Honey Bee</option>
+                            <option value="local-species">Local Native Species</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Number of hives</label>
+                        <input 
+                            type="number" 
+                            placeholder="Enter number of bee hives" 
+                            class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base"
+                        >
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Honey harvest cycle</label>
+                        <select class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base appearance-none bg-white">
+                            <option value="">Select harvest cycle</option>
+                            <option value="seasonal">Seasonal (2-3 times/year)</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="quarterly">Quarterly</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Expected honey production (kg/hive/year)</label>
+                        <input 
+                            type="number" 
+                            placeholder="e.g., 30 kg per hive per year" 
+                            class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base"
+                        >
+                    </div>
+                </div>
+
+                <!-- Mushroom Details -->
+                <div id="mushroomDetails" class="space-y-6 hidden">
+                    <h3 class="text-lg font-semibold text-gray-900">Mushroom cultivation details</h3>
+                    
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Mushroom variety</label>
+                        <select class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base appearance-none bg-white">
+                            <option value="">Select mushroom variety</option>
+                            <option value="oyster">Oyster Mushrooms</option>
+                            <option value="shiitake">Shiitake</option>
+                            <option value="button">Button Mushrooms</option>
+                            <option value="reishi">Reishi</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Growing medium</label>
+                        <select class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base appearance-none bg-white">
+                            <option value="">Select growing medium</option>
+                            <option value="straw">Straw substrate</option>
+                            <option value="sawdust">Sawdust substrate</option>
+                            <option value="logs">Log cultivation</option>
+                            <option value="compost">Compost substrate</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Number of growing bags/logs</label>
+                        <input 
+                            type="number" 
+                            placeholder="Enter number of growing units" 
+                            class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base"
+                        >
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Harvest cycle</label>
+                        <input 
+                            type="text" 
+                            placeholder="e.g., Every 2-3 weeks" 
+                            class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base"
+                        >
+                    </div>
+                </div>
+
+                <!-- Agroforestry Details -->
+                <div id="agroforestryDetails" class="space-y-6 hidden">
+                    <h3 class="text-lg font-semibold text-gray-900">Agroforestry details</h3>
+                    
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Tree species</label>
+                        <select class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base appearance-none bg-white">
+                            <option value="">Select tree species</option>
+                            <option value="fruit-trees">Fruit Trees</option>
+                            <option value="timber">Timber Trees</option>
+                            <option value="nut-trees">Nut Trees</option>
+                            <option value="multipurpose">Multipurpose Trees</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Number of trees</label>
+                        <input 
+                            type="number" 
+                            placeholder="Enter number of trees to plant" 
+                            class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base"
+                        >
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Companion crops</label>
+                        <input 
+                            type="text" 
+                            placeholder="e.g., Coffee, vegetables, pasture" 
+                            class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base"
+                        >
+                    </div>
+
+                    <div>
+                        <label class="block text-base font-medium text-gray-700 mb-3">Expected maturity period</label>
+                        <input 
+                            type="text" 
+                            placeholder="e.g., 3-5 years for fruit production" 
+                            class="w-full px-4 py-4 border border-gray-300 rounded-2xl focus:ring-2 focus:ring-green-light focus:border-green-light outline-none text-base"
+                        >
+                    </div>
+                </div>
             </div>
 
             <!-- Earnings Percentage -->
@@ -381,33 +734,48 @@
             const projectType = document.getElementById('projectType').value;
             
             // Hide all detail sections
-            document.getElementById('cropDetails').classList.add('hidden');
-            document.getElementById('livestockDetails').classList.add('hidden');
-            document.getElementById('aquacultureDetails').classList.add('hidden');
-            document.getElementById('poultryDetails').classList.add('hidden');
+            const sections = ['cropDetails', 'livestockDetails', 'aquacultureDetails', 'poultryDetails', 'dairyDetails', 'beekeepingDetails', 'mushroomDetails', 'agroforestryDetails'];
+            sections.forEach(sectionId => {
+                const element = document.getElementById(sectionId);
+                if (element) {
+                    element.classList.add('hidden');
+                }
+            });
             
             // Show relevant section based on project type
+            let sectionToShow = '';
             switch(projectType) {
                 case 'crops':
-                    document.getElementById('cropDetails').classList.remove('hidden');
+                    sectionToShow = 'cropDetails';
                     break;
                 case 'livestock':
-                    document.getElementById('livestockDetails').classList.remove('hidden');
+                    sectionToShow = 'livestockDetails';
                     break;
                 case 'aquaculture':
-                    document.getElementById('aquacultureDetails').classList.remove('hidden');
+                    sectionToShow = 'aquacultureDetails';
                     break;
                 case 'poultry':
-                    document.getElementById('poultryDetails').classList.remove('hidden');
+                    sectionToShow = 'poultryDetails';
                     break;
                 case 'dairy':
-                case 'beekeeping':
-                case 'mushrooms':
-                case 'agroforestry':
-                    // For these types, we'll show crop details as a fallback
-                    // In a real app, you'd create specific forms for each
-                    document.getElementById('cropDetails').classList.remove('hidden');
+                    sectionToShow = 'dairyDetails';
                     break;
+                case 'beekeeping':
+                    sectionToShow = 'beekeepingDetails';
+                    break;
+                case 'mushrooms':
+                    sectionToShow = 'mushroomDetails';
+                    break;
+                case 'agroforestry':
+                    sectionToShow = 'agroforestryDetails';
+                    break;
+            }
+            
+            if (sectionToShow) {
+                const element = document.getElementById(sectionToShow);
+                if (element) {
+                    element.classList.remove('hidden');
+                }
             }
         }
 
